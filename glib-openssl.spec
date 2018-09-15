@@ -2,7 +2,7 @@ Summary:	Network extensions for GLib using OpenSSL
 Summary(pl.UTF-8):	Rozszerzenia sieciowe biblioteki GLib wykorzystujące OpenSSL
 Name:		glib-openssl
 Version:	2.50.3
-Release:	1
+Release:	2
 License:	LGPL v2+
 Group:		Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/glib-openssl/2.50/%{name}-%{version}.tar.xz
