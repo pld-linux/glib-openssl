@@ -1,0 +1,11 @@
+--- glib-openssl-2.50.8/tls/openssl/gtlsclientconnection-openssl.c~	2018-02-26 11:17:16.000000000 +0100
++++ glib-openssl-2.50.8/tls/openssl/gtlsclientconnection-openssl.c	2021-10-24 22:03:25.003716657 +0200
+@@ -509,7 +509,7 @@
+       X509_VERIFY_PARAM *param;
+ 
+       param = X509_VERIFY_PARAM_new ();
+-      X509_VERIFY_PARAM_set1_host (param, hostname);
++      X509_VERIFY_PARAM_set1_host (param, hostname, strlen(hostname));
+       SSL_CTX_set1_param (priv->ssl_ctx, param);
+       X509_VERIFY_PARAM_free (param);
+     }
