@@ -30,7 +30,7 @@ Rozszerzenia sieciowe biblioteki GLib wykorzystujące OpenSSL.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 # rebuild for as-needed to work
